@@ -1,0 +1,25 @@
+{
+  "name": "client",
+  "version": "0.0.1",
+  "description": "WebRTC Client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "webpack --mode development",
+    "pack-prod": "webpack --mode production",
+    "build-client": "browserify src/clientTest/client.js -o dist/main.js",
+    "build-peer": "browserify src/peerTest/peer.js -o dist/bundle.js"
+  },
+  "author": "Brent McFerrin",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.1.0",
+    "simple-peer": "^9.1.2",
+    "socket.io-client": "^2.2.0",
+    "socket.io-p2p": "^2.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
+}

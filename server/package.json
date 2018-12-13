@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "WebRTC Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-peer": "node socket-peer-server.js"
+  },
+  "author": "Brent McFerrin",
+  "license": "ISC",
+  "dependencies": {
+    "browserify-middleware": "^8.1.1",
+    "debug": "^4.1.0",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "lodash": "^4.17.11",
+    "simple-peer": "^9.1.2",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "socket.io-p2p-server": "^1.2.0"
+  }
+}
